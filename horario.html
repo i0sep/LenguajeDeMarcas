@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    
+    <style>
+        table,td,th {
+            border: 3px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            text-align: center;
+        }
+        tbody td{
+            padding: 10px;
+            
+        }
+        tfoot td{
+            padding: 2px;
+        }
+        .digi {
+            background-color: lightblue;
+            color: black;
+        }
+        .prog {
+            background-color: green;
+            color: black;
+        }
+        .ipe {
+            background-color: lightgreen;
+            color: black;
+        }
+        .pisa {
+            background-color: orange;
+            color: black;
+        }
+        .sisi {
+            background-color: rgb(226, 51, 98);
+            color: black;
+        }
+        .lgm {
+            background-color: rgb(193, 121, 7);
+            color: black;
+        }
+        .bsd {
+            background-color: rgb(0, 4, 255);
+            color: black;
+        }
+        .ing {
+            background-color: yellow;
+            color: black;
+        }
+        .ende {
+            background-color: rgb(105, 105, 161);
+            color: black;
+        }
+        .recreo {
+            background-color: rgb(224, 224, 224);
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <table>
+        <caption>GS-1DAW</caption>
+            <thead>
+                <tr>
+                    <td></td>
+                    <th class="recreo">Lunes</th>
+                    <th class="recreo">Martes</th>
+                    <th class="recreo">Miércoles</th>
+                    <th class="recreo">Jueves</th>
+                    <th class="recreo">Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="recreo">8:30-9:25</td>
+                    <td rowspan="2" class="digi">DASP</td>
+                    <td class="pisa">PISA</td>
+                    <td rowspan="3" class="sisi">SISI</td>
+                    <td rowspan="2" class="lgm">Lenguaje de Marcas</td>
+                    <td rowspan="2" class="prog">Programación</td>
+                </tr>
+                <tr>
+                    <td class="recreo">9:35-10:20</td>
+                    <td class="lgm">Lenguaje de Marcas</td>
+                </tr>
+                <tr>
+                    <td class="recreo">10:20-11:15</td>
+                    <td class="prog">Programación</td>
+                    <td class="bsd">Base de Datos</td>
+                    <td class="sisi">SISI</td>
+                    <td class="ende">ENDE</td>
+                </tr>
+                <tr>
+                    <td class="recreo">11:15-11:45</td>
+                    <td colspan="5" class="recreo">Recreo</td>
+                </tr>
+                <tr>
+                    <td class="recreo">11:45-12:40</td>
+                    <td class="prog">Programación</td>
+                    <td class="bsd">Base de Datos</td>
+                    <td class="bsd">Base de Datos</td>
+                    <td class="sisi">SISI</td>
+                    <td rowspan="2" class="bsd">Base de Datos</td>
+                </tr>
+                <tr>
+                    <td class="recreo">12:40-13:35</td>
+                    <td class="ipe">IPE</td>
+                    <td class="ende">ENDE</td>
+                    <td rowspan="2" class="prog">Programación</td>
+                    <td rowspan="2" class="ipe">IPE</td>
+                </tr>
+                <tr>
+                    <td class="recreo">13:35-14:30</td>
+                    <td class="pisa">PISA</td>
+                    <td class="ing">Inglés</td>
+                    <td class="ing">Inglés</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="prog">Programación</td>
+                    <td colspan="3" class="prog">Manuel</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="bsd">Base de Datos</td>
+                    <td colspan="3" class="bsd">Jesús</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="lgm">Lenguaje de Marcas</td>
+                    <td colspan="3" class="lgm">Paula</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="ipe">IPE</td>
+                    <td colspan="3" class="ipe">Jose Luis</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="sisi">Sistemas informáticos (SISI)</td>
+                    <td colspan="3" class="sisi">Antonio</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="ende">Entornos (ENDE)</td>
+                    <td colspan="3" class="ende">Trinidad</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="ing">Inglés</td>
+                    <td colspan="3" class="ing">Damaris</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="digi">Digitalización</td>
+                    <td colspan="3" class="digi">Ángel</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="pisa">Proyecto intermodular y Sostenibilidad aplicada</td>
+                    <td colspan="3" class="pisa">Julián</td>
+                </tr>
+            </tfoot>
+    </table>
+
+</body>
+</html>

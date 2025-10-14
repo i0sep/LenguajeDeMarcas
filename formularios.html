@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+    <body>
+        <h1>Formulario HTML</h1>
+        <form action="#" method="post" name="from1" >
+            
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="nombre" id="nombre" size="20" maxlength="20" required>
+            <br>
+            
+            
+            <label for="mensaje">Mensaje: </label>
+            <input type="text" name="mensaje" id="mensaje" size="40" maxlength="40" placeholder="Escribe un mensaje">
+            <br>
+            
+            
+            <label for="contrasenia">Contraseña:</label>
+            <input type="password" name="contrasenia" size="8" maxlength="10" required>
+            <br><br>
+            
+            
+            Elige la edad que tengas: <br>
+            <input type="radio" name="edad" id="menor" value="0-17"> <label for="menor">0-17</label>
+            <br>
+            <input type="radio" name="edad" id="mayor" value="18" checked> <label for="mayor">18 o más</label>
+            <br><br>
+            
+            
+            
+            Elige tu provincia: <br>
+            <input type="radio" name="provincias" id="CR" value="Ciudad Real"> <label for="provincias">Ciudad Real</label>
+            <input type="radio" name="provincias" id="ALB" value="Albacete"> <label for="provincias">Albacete</label>
+            <input type="radio" name="provincias" id="CNC" value="Cuenca"> <label for="provincias">Cuenca</label>
+            <input type="radio" name="provincias" id="TLD" value="Toledo"> <label for="provincias">Toledo</label>
+            <input type="radio" name="provincias" id="GU" value="Ciudad Real"> <label for="provincias">Guadalajara</label>
+            <br> <br>
+
+
+            Modulos convalidados: <br>
+            <input type="checkbox" name="modulos" value="BBDD" id="BBDD"> <label for="BBDD">Base de Datos</label>
+            <br>
+            <input type="checkbox" name="modulos" value="LGM" id="LGM"> <label for="LGM">Lenguaje de marcas</label>
+            <br>
+            <input type="checkbox" name="modulos" value="PRG" id="PRG"> <label for="PRG">Programación</label>
+            <br>
+            <input type="checkbox" name="modulos" value="SISI" id="SISI"> <label for="SISI">Sistemas Informáticos</label>
+            <br><br>
+
+
+            <label for="ciclo">Ciclo matriculado:</label>
+            <select name="ciclo" id="ciclo">
+                <option value="#" selected disabled>Elige un ciclo...</option>
+                <option value="asir">ASIR</option>
+                <option value="dam">DAM</option>
+                <option value="daw" >DAW</option>
+            </select> <br><br>
+
+            <textarea name="ea" id="ea" placeholder="Escribe lo que quieras" rows="10" cols="20"></textarea>
+
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </body>
+</html>
