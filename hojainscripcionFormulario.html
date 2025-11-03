@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja Inscripción</title>
+</head>
+    <body>
+        <fieldset>
+            <table>
+                <tr>
+                    <td><label for="name">Nombre: </label></td>
+                    <td><label for="surname">Apellidos: </label></td>
+                    <td><label for="DNI">DNI: </label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="nombre" id="name"></td>
+                    <td><input type="text" name="apellidos" id="surname"></td>
+                    <td><input type="text" name="personadni" id="DNI"></td>
+                </tr>
+                <tr>
+                    <td><label for="borned">Localidad de Nacimiento</label></td>
+                    <td><label for="provincia">Provincia</label></td>
+                    <td><label for="date">Fecha de Nacimiento</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="localidad" id="borned"></td>
+                    <td>
+                <select name="provincias" id="provincia">
+                        <option value="nada" selected disabled>Elegir</option>
+                        <option value="Ciudad Real">Ciudad Real</option>
+                        <option value="Toledo">Toledo</option>
+                        <option value="Albacete">Albacete</option>
+                        <option value="Cuenca">Cuenca</option>
+                        <option value="Guadalajara">Guadalajara</option>
+                </select></td>
+                    <td><input type="date" name="fecha" id="date"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="direct">Dirección</label></td>
+                    <td><label for="postal">Código Postal</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" name="Dirección" id="direct"></td>
+                    <td><input type="text" name="codigopostal" id="postal"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Forma de acceso</legend>
+            <input type="radio" name="directo" id="direct1"> <label for="direct1">Directo</label>
+        <div>
+                <input type="radio" name="bachillerato" id="bach"> <label for="bach">Bachillerato</label> <label for="textomodalidad">Log Modalidad</label>
+                <input type="text" name="modalidades" id="textomodalidad" list="modalidad">
+            <datalist id="modalidad">
+                    <option value="ciencias"></option>
+                    <option value="humanidades"></option>
+                    <option value="ciencias sociales"></option>
+                    <option value="artes"></option>
+            </datalist>
+                <br>
+                <input type="radio" name="experimental" id="exp"> <label for="exp">Experimental</label>
+                <br>
+                <input type="radio" name="COU" id="cou1"> <label for="cou1">Cou</label> <label for="opcion">Opción</label>
+                <input type="text" name="Opciones" id="opcion">
+                <br>
+                <input type="radio" name="FP2" id="fp2"> <label for="fp2">FP2</label>
+                <br>
+                <input type="radio" name="Otros" id="others"> <label for="others">Otros (especifique)</label>
+                <input type="text" name="Otros1" id="others1">
+        </div>
+            
+            <br>
+            <input type="radio" name="directo" id="libre"> <label for="libre">Prueba Libre</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Documentos Adjuntados</legend>
+                
+                <input type="checkbox" name="documentos" value="fotocopia" id="foto"> <label for="foto">Fotocopia DNI</label>
+                <input type="checkbox" name="modulos" value="academico" id="certificado"> <label for="certificado">Certificado académico</label>
+                <br>
+                <input type="checkbox" name="modulos" value="otrosdocumentos" id="document1"> <label for="documents1">Otros documentos (especifique)</label>
+                <input type="text" name="documentos1" id="documents1">
+        </fieldset>
+            <br><br>
+            <input type="submit" value="Enviar solicitud">
+            <input type="reset" value="Limpiar">
+            
+        
+    </body>
+</html>

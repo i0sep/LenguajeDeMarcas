@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujo</title>
+</head>
+<body>
+    <canvas id="tutorial" width="500" height="500" style="border: 1px solid grey;">
+        Tu navegador no soporta canvas. Actualízalo.
+    </canvas>
+
+    <script type="text/javascript">
+        var c=document.getElementById("tutorial");
+        var dibujo=c.getContext("2d");
+
+        dibujo.fillStyle ="violet";
+        dibujo.beginPath();
+        dibujo.arc(200, 100, 50, 0, Math.PI*2, true);
+        dibujo.closePath();
+        dibujo.fill();
+
+        dibujo.fillStyle ="pink";
+        dibujo.beginPath();
+        dibujo.arc(300, 400, 70, 0, Math.PI*2, true);
+        dibujo.closePath();
+        dibujo.fill();
+
+        dibujo.fillStyle ="purple";
+        dibujo.beginPath();
+        dibujo.arc(250, 200, 90, 0, Math.PI*2, true);
+        dibujo.closePath();
+        dibujo.fill();
+    </script>
+</body>
+</html>

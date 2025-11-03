@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parques</title>
+    <style>
+        body {
+            margin-left: 250px; 
+            padding: 0;
+            min-height: 100vh;
+            background-color: #f4f7f9;
+            font-family: Arial, sans-serif;
+            color: #333333;
+        }
+        header{
+            background-color: #004d40;
+            color: #ffffff;
+            padding: 20px;
+        }
+        aside{
+            color: #1a535c;
+            background-color: #e6f7ff;
+            padding-left: 10px;
+            padding-right: 30px;
+            position: fixed; 
+            top: 0; 
+            left: 0;
+            width: 210px;
+            height: 100%;
+            overflow-y: auto;
+            border-right: 2px solid #b3e0ff;
+        }
+        aside a {
+            color: #1a535c;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+        aside a:hover {
+            color: #0077b6; /* Un color más brillante al pasar el ratón */
+            text-decoration: underline;
+        }
+        section{
+            color: #333333;
+            background-color: #ffffff;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #0077b6;
+        }
+        section h3 {
+            color: #004d40;
+        }
+        footer {
+            background-color: #004d40;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-left: 0px;
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+    <body>
+        <header>
+            <h1>Parques Nacionales De España</h1>
+        </header>
+        <aside>
+            <h3>Mis Buscadores</h3>
+            <a href="https://www.google.com/">Google</a> <br>
+            <a href="https://duckduckgo.com/">DuckDuckGo</a> <br>
+            <a href="https://www.startpage.com/es/">Startpage</a> <br>
+            <h3>Los Parques Nacionales</h3>
+            <a href="#picos">Picos de Europa</a> <br>
+            <a href="#sierra">Sierra de Gredos</a> <br>
+            <a href="#teide">El Teide</a> <br>
+        </aside>
+        
+        
+        <section id="general">
+            <h2>Información general</h2>
+            <div>
+                En esta página Web encontrarás los parques nacionales españoles mas importantes.
+            </div>
+        </section>
+        
+
+        
+        <section id="picos">
+            <h3>Picos de Europa</h3>
+            <div>
+                Los Picos de Europa son un macizo montañoso de la Cordillera Cantábrica, repartido entre Asturias, Cantabria y León, conocido por ser la mayor formación caliza de la Europa Atlántica. Su geología kárstica ha creado un paisaje abrupto con simas profundas, desfiladeros notables y lagos glaciares, siendo Torre Cerredo 2.650 su punto más alto. El macizo se divide en tres: Occidental (Cornión), Central (Urrielles) y Oriental (Ándara). Gran parte de su territorio es Parque Nacional y alberga una fauna destacada, incluyendo el rebeco, el oso pardo y el lobo ibérico.
+            </div>
+            <img src="./ejercicioParques/naranjo-de-bulnes.jpg" alt="Picos de Europa" width="600">
+        </section>
+        
+        
+        <section id="sierra">
+            <h3>Sierra de Gredos</h3>
+            <div>
+                La Sierra de Gredos es una destacada formación montañosa del Sistema Central español, extendida principalmente por Ávila, pero también tocando Cáceres, Madrid y Salamanca. Su pico más alto es el Almanzor 2.592, que es la cumbre de todo el Sistema Central. Geológicamente, es una mole granítica esculpida por la erosión glaciar, lo que ha dado lugar a paisajes icónicos como el Circo de Gredos, lagunas glaciares (Laguna Grande) y profundas gargantas. Parte de la sierra está protegida como Parque Regional. Su principal valor faunístico es la subespecie endémica Cabra Montés de Gredos (Capra pyrenaica victoriae), además de otros endemismos como el sapo y la salamandra de Gredos.
+            </div>
+            <img src="./ejercicioParques/laguna_grande.jpg" alt="Sierra de Gredos" width="600">
+        </section>
+        
+        
+        
+        <section id="teide">
+            <h3>El Teide</h3>
+            <div>
+                El Teide 3.715, el pico más alto de España en Tenerife, se encuentra bajo un régimen de vigilancia constante. Si bien la actividad sísmica es recurrente (registrándose enjambres sísmicos de baja magnitud), los expertos indican que no hay indicios de una erupción inminente ni riesgo para la población. Meteorológicamente, se esperan intervalos nubosos con posibilidad de precipitaciones débiles, con temperaturas frescas en la cumbre. La operatividad del Teleférico debe consultarse antes de la visita.
+            </div>
+            <img src="./ejercicioParques/parque-nacional-del-teide-2deab97d.png" alt="Teide" width="600">
+        </section>
+
+        
+        
+        
+        <section id="ordesa">
+            <h3>Ordesa y Monte Perdido</h3>
+            <div>
+            El Parque Nacional de Ordesa y Monte Perdido se sitúa en la vertiente sur de los Pirineos centrales, en la provincia de Huesca, Aragón. Declarado Patrimonio Mundial por la UNESCO, el parque se articula en torno a cuatro valles principales (Ordesa, Añisclo, Escuaín y Pineta) y contiene el macizo de Monte Perdido (3.355 m). Su geomorfología se caracteriza por cañones, circos glaciares y la elevación de su pico central, el cual es el macizo calizo más alto de Europa. El parque protege diversos ecosistemas, desde bosques de fondo de valle hasta prados alpinos de alta montaña.            
+            </div>
+            <img src="./ejercicioParques/dbc244bd7b12-portada-gettyimages-1336628628-t.avif" alt="Teide" width="600">
+        </section>
+        
+        
+        
+        <section id="estany">
+            <h3>Aigüestortes i Estany de Sant Maurici</h3>
+            <div>
+            Único parque nacional de Cataluña, situado en el Alto Pirineo de Lleida. Se caracteriza por un modelado glaciar que ha dado lugar a un paisaje de alta montaña con más de 200 estanques (lagos) de origen glaciar. Sus elementos más distintivos son los meandros fluviales conocidos como "Aigüestortes" en el valle de Sant Nicolau y el Estany de Sant Maurici, enmarcado por las cumbres de Els Encantats. El parque presenta una gran biodiversidad, con bosques de pino negro y abeto en las cotas inferiores y prados alpinos en las superiores.            
+            </div>
+            <img src="./ejercicioParques/Estany_de_Sant_Maurici.jpg" alt="Teide" width="600">
+        </section>
+
+
+
+        <section id="guadarrama">
+            <h3>Sierra de Guadarrama</h3>
+            <div>
+            La Sierra de Guadarrama forma parte del Sistema Central, dividiendo la Meseta Castellana y separando las cuencas hidrográficas del Duero y el Tajo. El Parque Nacional se extiende por las comunidades de Madrid y Castilla y León (Segovia). Su pico más alto es Peñalara (2.428 m).
+            <br>
+            El paisaje está determinado por relieves graníticos y la presencia de vestigios de origen glaciar. La vegetación se distribuye en pisos altitudinales, destacando los bosques de pino silvestre, melojares, y los matorrales supraforestales de altura. Es un área de gran valor ecológico que alberga especies como el Águila Imperial Ibérica y el Buitre Negro.
+            </div>
+            <img src="./ejercicioParques/unnamed.jpg" alt="Teide" width="600">
+        </section>
+
+
+
+
+        <section id="guadarrama">
+            <h3>Sierra de Guadarrama</h3>
+            <div>
+            La Sierra de Guadarrama forma parte del Sistema Central, dividiendo la Meseta Castellana y separando las cuencas hidrográficas del Duero y el Tajo. El Parque Nacional se extiende por las comunidades de Madrid y Castilla y León (Segovia). Su pico más alto es Peñalara (2.428 m).
+            <br>
+            El paisaje está determinado por relieves graníticos y la presencia de vestigios de origen glaciar. La vegetación se distribuye en pisos altitudinales, destacando los bosques de pino silvestre, melojares, y los matorrales supraforestales de altura. Es un área de gran valor ecológico que alberga especies como el Águila Imperial Ibérica y el Buitre Negro.
+            </div>
+            <img src="./ejercicioParques/unnamed.jpg" alt="Teide" width="600">
+        </section>
+
+        <footer>
+            Página hecha por José Ángel Rodríguez Arenas
+        </footer>
+    </body>
+</html>

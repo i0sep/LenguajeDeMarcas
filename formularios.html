@@ -1,70 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <style>
+        .fondo{
+            background-color: rgb(255, 236, 194);
+            border: 3px;
+            padding: 20px;
+            margin-bottom: 10px;
+            padding-left: 40px;
+        }
+        .fondo2{
+            background-color: rgb(255, 194, 252);
+            border: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            padding-left: 80px;
+        }
+    </style>
 </head>
     <body>
         <h1>Formulario HTML</h1>
         <form action="#" method="post" name="from1" >
             
-            <label for="nombre">Escribe tu nombre:</label>
-            <input type="text" name="nombre" id="nombre" size="20" maxlength="20" required>
-            <br>
-            
-            
-            <label for="mensaje">Mensaje: </label>
-            <input type="text" name="mensaje" id="mensaje" size="40" maxlength="40" placeholder="Escribe un mensaje">
-            <br>
-            
-            
-            <label for="contrasenia">Contraseña:</label>
-            <input type="password" name="contrasenia" size="8" maxlength="10" required>
-            <br><br>
-            
-            
-            Elige la edad que tengas: <br>
-            <input type="radio" name="edad" id="menor" value="0-17"> <label for="menor">0-17</label>
-            <br>
-            <input type="radio" name="edad" id="mayor" value="18" checked> <label for="mayor">18 o más</label>
-            <br><br>
-            
-            
-            
-            Elige tu provincia: <br>
-            <input type="radio" name="provincias" id="CR" value="Ciudad Real"> <label for="provincias">Ciudad Real</label>
-            <input type="radio" name="provincias" id="ALB" value="Albacete"> <label for="provincias">Albacete</label>
-            <input type="radio" name="provincias" id="CNC" value="Cuenca"> <label for="provincias">Cuenca</label>
-            <input type="radio" name="provincias" id="TLD" value="Toledo"> <label for="provincias">Toledo</label>
-            <input type="radio" name="provincias" id="GU" value="Ciudad Real"> <label for="provincias">Guadalajara</label>
-            <br> <br>
+            <fieldset class="fondo">
+                <legend><h2>Formulario: </h2></legend>
+
+                <!--Casilla de texto-->
+                <label for="nombre">Escribe tu nombre:</label>
+                <input type="text" name="nombre" id="nombre" size="20" maxlength="20" required>
+                <br>
+                
+                <!--Casilla de texto para mensaje-->
+                <label for="mensaje">Mensaje: </label>
+                <input type="text" name="mensaje" id="mensaje" size="40" maxlength="40" placeholder="Escribe un mensaje">
+                <br>
+                
+                <!--Casilla de password-->
+                <label for="contrasenia">Contraseña:</label>
+                <input type="password" name="contrasenia" size="8" maxlength="10" required>
+                <br><br>
+                
+
+                <!--Casilla de elección de edad (2 opciones)-->
+                Elige la edad que tengas: <br>
+                <input type="radio" name="edad" id="menor" value="0-17"> <label for="menor">0-17</label>
+                <br>
+                <input type="radio" name="edad" id="mayor" value="18" checked> <label for="mayor">18 o más</label>
+                <br><br>
+                
+                <!--Casilla de elección de provincia (5 opciones)-->
+                Elige tu provincia: <br>
+                <input type="radio" name="provincias" id="CR" value="Ciudad Real"> <label for="provincias">Ciudad Real</label>
+                <input type="radio" name="provincias" id="ALB" value="Albacete"> <label for="provincias">Albacete</label>
+                <input type="radio" name="provincias" id="CNC" value="Cuenca"> <label for="provincias">Cuenca</label>
+                <input type="radio" name="provincias" id="TLD" value="Toledo"> <label for="provincias">Toledo</label>
+                <input type="radio" name="provincias" id="GU" value="Ciudad Real"> <label for="provincias">Guadalajara</label>
+                <br> <br>
 
 
-            Modulos convalidados: <br>
-            <input type="checkbox" name="modulos" value="BBDD" id="BBDD"> <label for="BBDD">Base de Datos</label>
-            <br>
-            <input type="checkbox" name="modulos" value="LGM" id="LGM"> <label for="LGM">Lenguaje de marcas</label>
-            <br>
-            <input type="checkbox" name="modulos" value="PRG" id="PRG"> <label for="PRG">Programación</label>
-            <br>
-            <input type="checkbox" name="modulos" value="SISI" id="SISI"> <label for="SISI">Sistemas Informáticos</label>
-            <br><br>
+                <!--Casilla para marcar varias elecciones-->
+                Modulos convalidados: <br>
+                <input type="checkbox" name="modulos" value="BBDD" id="BBDD"> <label for="BBDD">Base de Datos</label>
+                <br>
+                <input type="checkbox" name="modulos" value="LGM" id="LGM"> <label for="LGM">Lenguaje de marcas</label>
+                <br>
+                <input type="checkbox" name="modulos" value="PRG" id="PRG"> <label for="PRG">Programación</label>
+                <br>
+                <input type="checkbox" name="modulos" value="SISI" id="SISI"> <label for="SISI">Sistemas Informáticos</label>
+                <br><br>
 
 
-            <label for="ciclo">Ciclo matriculado:</label>
-            <select name="ciclo" id="ciclo">
-                <option value="#" selected disabled>Elige un ciclo...</option>
-                <option value="asir">ASIR</option>
-                <option value="dam">DAM</option>
-                <option value="daw" >DAW</option>
-            </select> <br><br>
+                <!--Casilla que despliega opciones-->
+                <label for="ciclo">Ciclo matriculado:</label>
+                <select name="ciclo" id="ciclo">
+                    <option value="#" selected disabled>Elige un ciclo...</option>
+                    <option value="asir">ASIR</option>
+                    <option value="dam">DAM</option>
+                    <option value="daw" >DAW</option>
+                </select> <br><br>
+                
+                <!--Casilla de texto amplia (ampliable) para poner mas texto-->
+                <textarea name="ea" id="ea" placeholder="Escribe lo que quieras" rows="5" cols="20"></textarea>
+                <hr>
 
-            <textarea name="ea" id="ea" placeholder="Escribe lo que quieras" rows="10" cols="20"></textarea>
+                
+                <!--Casilla que autcompleta ciertas opciones-->
+                <label for="poblacion">Escribe una población</label>
+                <input type="text" id="poblacion" list="lista" name="poblacion">
+                <datalist id="lista">
+                    <option value="Valdepeñas"></option>
+                    <option value="Membrilla"></option>
+                    <option value="Manzanares"></option>
+                    <option value="Ocaña"></option>
+                </datalist>
+                <br>
+
+
+                <!--Barra gradiante para marcar una serie de valores los cuales tienen mínimo y máximo-->
+                <label for="rango">Grado de satisfacción del curso</label>
+                <br>
+                0<input type="range" name="satisfaccion" id="rango" min="0" max="100" value="50" oninput="valueRange.value=this.value">100
+                <br>
+                <label for="valueRange">Valor seleccionado: <output name="valorRango" id="valueRange"> 50 </output>   </label>
+            
+            </fieldset>
+            <br>
+            <fieldset class="fondo2">
+                <legend><h2>Segunda parte cuertionario: </h2></legend>
+                <label for="colour">Escoge tu color favorito: </label>
+                <input type="color" name="color" id="colour">
+                <br>
+
+                <label for="date">Cuándo es tu cumpleaños: </label>
+                <input type="date" name="fecha" id="date">
+                <br>
+                <label for="datetime">Qué dia y hora estas disponible: </label>
+                <input type="datetime-local" name="hora" id="datetime">
+                <br><br>
+                <label for="email">Cual es tu email personal: </label>
+                <input type="email" name="gmail" id="email">
+                <br>
+                <label for="month">Dinos un mes: </label>
+                <input type="month" name="mes" id="month">
+                <br>
+                <label for="numero">Coloca un número: </label>
+                <input type="number" name="numero" id="number">
+                <br><br>
+                <input type="search" name="buscar" id="search">
+                <br><br>
+                <label for="telephone">Dinos tu teléfono de contacto: </label>
+                <input type="tel" name="telefono" id="telephone">
+                <br>
+                <label for="time">Que hora es: </label>
+                <input type="time" name="tiempo" id="time">
+                <br>
+                <label for="urk">Dinos una URL: </label>
+                <input type="url" name="link" id="url">
+                <br><br>
+                <input type="week" name="semana" id="week">
+            </fieldset>
+            <!--Añadir: color date datetime-local email month number search tel time url week-->
+
+<br><br>
+            <input type="button" value="ALT-F4" onclick="window.close();">          
+            <button type="button" onclick="alert('Sorpresa')">HAZME CLICK!</button>
+
 
             <br><br>
             <input type="submit" value="Enviar">
             <input type="reset" value="Borrar">
+            
         </form>
     </body>
 </html>
