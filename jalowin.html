@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiesta de Halloween</title>
+    <Style>
+        @font-face{
+            font-family: 'halloween';
+            src: url(./fonts/HALLOWEEN.ttf);
+        }
+        body{
+            background-color: black;
+            background-image: url(./img/telarana.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'halloween';
+            color: rgb(255, 158, 13);
+            text-align: center;
+        }
+        img{
+            width: 200px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+        img:hover{
+            transform:scale(3);
+        }
+        h1{
+            font-size: 4em;
+            text-shadow: 5px 5px 20px purple;
+        }
+    </Style>
+</head>
+<body>
+    <h1>Bienvenido a la Fiesta de Halloween</h1>
+    <img src="./img/calabaza.png" alt="Calabaza de Halloween">
+    <p>¡Prepárate para una noche espeluznante!</p>
+</body>
+</html>
