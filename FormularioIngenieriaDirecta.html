@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <fieldset style="width: 40%;">
+        <legend>
+            Formulario
+        </legend>
+        <form action="#" method="post">
+            
+            <label for="name">Nombre completo:</label>
+            <input type="text" name="nombre" id="name"><br>
+            
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="Hotmail" id="email"> <br>
+            
+
+            <label for="age">Edad</label>
+            <input type="number" name="edad" id="age"> <br>
+            
+
+            
+            Género:
+            <input type="radio" name="gender" id="gMasculino" value="masculino">
+            <label for="gMasculino">Masculino</label>
+            
+            <input type="radio" name="gender" id="gFemenino" value="femenino">
+            <label for="gFemenino">Femenino</label> 
+            <br>
+
+
+            Intereses:
+            <input type="checkbox" name="hobby" id="hobbies1" value="deportes">
+            <label for="hobbies1">Deportes</label>
+            
+            <input type="checkbox" name="hobby" id="hobbies2" value="musica">
+            <label for="hobbies2">Música</label>
+            
+            <input type="checkbox" name="hobby" id="hobbies3" value="deportes">
+            <label for="hobbies3">Cine</label>
+            <br>
+
+            <label for="pais">Pais de residencia:</label>
+            <select name="residencia" id="pais">
+                <option value="Espana" selected>España</option>
+                <option value="Fracia">Francia</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Otros">Otros</option>
+            </select> <br>
+            
+            <label for="comentarioAdicional">Comentarios adicionales:</label>
+            <textarea name="texto" id="comentarioAdicional" placeholder="Escribe tus comentarios aquí..."></textarea>
+            <br>
+            
+            <label for="rango">Nivel de satisfacción (0 a 100):</label>
+            <input type="range" name="satisfaccion" id="rango" value="78" oninput="valorRango.value=this.value" min="0" max="100">
+            <output name="valorRango">78</output>
+            <br>
+            
+
+            <label for="time">Fecha de la cita:</label>
+            <input type="date" name="fecha" id="time">
+            <br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+        </form>
+    </fieldset>
+</body>
+</html>
