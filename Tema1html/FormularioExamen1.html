@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="width: 350px;">
+        <form action="#" method="post">
+            <label for="name">Escribe tu nombre:</label>
+            <input type="text" name="nombre" id="name" required placeholder="Francesc"> <br> <br>
+            <label for="surname">Escribe tu apellido:</label>
+            <input type="text" name="apellido" id="surname" placeholder="Ricart"> <br> <br>
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="gmail" id="email" placeholder="correo@empresa.com"> <br> <br>
+            <p><strong>¿Qué valoración le das a la publicación?</strong></p>
+            <input type="radio" name="numero0" id="cero"> <label for="cero">0</label>
+            <input type="radio" name="numero1" id="uno"> <label for="uno">1</label>
+            <input type="radio" name="numero2" id="dos"> <label for="dos">2</label>
+            <input type="radio" name="numero3" id="tres"> <label for="tres">3</label>
+            <input type="radio" name="numero4" id="cuatro"> <label for="cuantro">4</label>
+            <input type="radio" name="numero5" id="cinco"> <label for="cinco">5</label>
+            <p><strong>¿Qué asignaturas has estudiado?</strong></p>
+            <input type="checkbox" name="lenguaje1" id="html"> <label for="html">html</label>
+            <input type="checkbox" name="lenguaje2" id="css"> <label for="css">css</label>
+            <input type="checkbox" name="lenguaje3" id="javascript"> <label for="javascript">javascript</label> <br><br>
+            
+            <label for="alineacion">Selecciona tu alineación ideal</label> <br> 
+            <select name="alineacion1" id="alineacion">
+                <optgroup label="Jugadores">
+                <option>Cristiano</option>
+                <option>Messi</option>
+                <option>Chigrinsky</option>
+                <option>Sergio Ramos</option>
+                <option>Shevchenko</option>
+                </optgroup>
+            </select>
+            
+            <br> <br>
+            <label for="texto"><strong>¿Qué mejorarías de este curso?</strong></label><br><br>
+            <textarea name="textogrande" id="textogrande" rows="5" cols="45"></textarea><br>
+            <button type="submit" style="width: 350px">Enviar</button>
+
+            <picture>
+                <img src="" alt="">
+                <img src="" alt="" media="max-width:1000px">
+            </picture>
+            <dl>
+                <dt>jola</dt>
+                <dd>garbanzos</dd>
+            </dl>
+        </form>
+    </fieldset>
+</body>
+</html>
