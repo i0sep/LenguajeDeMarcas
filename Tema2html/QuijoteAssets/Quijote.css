@@ -1,0 +1,65 @@
+body{
+    background-image:
+    url('./img/vecteezy_ai-generated-old-worn-paper-sheet-clip-art_40216407.png'),
+    url('./img/00-old-wooden-cutting-board-diffuse-map-from-seamless-pbr-texture-set-free-download.webp');
+    background-repeat: no-repeat;
+    background-attachment:local, fixed;
+    background-position: top center, center;
+    background-size: 62%, cover;
+    margin-top: 100px;
+    text-align: justify;
+    font-family:'Salium';
+}
+@font-face {
+    font-family: 'Salium';
+    src: url(./img/Salium.ttf);
+}
+h1{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-left: 31%;
+    margin-right: 30%;
+}
+.HiperEnlaces{
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease;
+}
+a:hover{
+    text-decoration: underline;
+    transform: scale(200%);
+    color: peru;
+}
+#ImagenIndex{
+    width: 35%;
+    margin-left: 32.5%;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+div.DivInferior{
+    margin-left: 40%;
+    font-size: 1.5em;
+}
+div.DivSuperior{
+    overflow: auto;
+    height: 570px;
+    padding: 10px;
+    margin-right: 24%;
+}
+hr{
+    border: 1px solid peru;
+    width: 60%;
+}
+.imagenDerecha{
+    width: 40%;
+    float: right;
+    margin: 0 5px 5px 10px;
+    border: 3px;
+    border-radius: 10px;
+}
