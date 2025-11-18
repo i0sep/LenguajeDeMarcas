@@ -33,7 +33,6 @@ h2{
 }
 a:hover{
     text-decoration: underline;
-    transform: scale(200%);
     color: peru;
 }
 #ImagenIndex{
