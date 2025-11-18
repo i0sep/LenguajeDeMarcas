@@ -37,8 +37,8 @@ a:hover{
     color: peru;
 }
 #ImagenIndex{
-    width: 35%;
-    margin-left: 32.5%;
+    width: 32%;
+    margin-left: 35%;
     border: 3px solid black;
     border-radius: 15px;
 }
@@ -48,7 +48,7 @@ div.DivInferior{
 }
 div.DivSuperior{
     overflow: auto;
-    height: 570px;
+    height: 430px;
     padding: 10px;
     margin-right: 24%;
 }
