@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de Clase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(166, 166, 166);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            font-size: 24px;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: white;
+        }
+        th,td {
+            border: 3px solid black;
+            padding: 15px;
+            text-align: center;
+            transition: font-size 0.3s;
+        }
+        .matematicas{
+            background-color: brown;
+            color: white;
+        }
+        form{
+            padding-top: 20px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: green;
+        }
+        a:visited{
+            color: red;
+        }
+
+        td:first-of-type{
+            background-color: green;
+            font-weight: normal;
+        }
+        tr:nth-child(3) td:nth-child(2){ 
+            background-color: yellow;
+            font-weight: bold;
+        }
+        tr th:last-child:hover,
+        tr td:last-child:hover {
+            font-size: 200%;
+        }
+        th::first-letter{
+            font-size: 200%;
+        }
+        input[required]{
+            border: 2px solid red;
+            padding: 5px 5px 5px 5px;
+        }
+        input[type="submit"]{
+            margin-top:10px;
+        }
+        label::after{
+            content: "*";
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">HORARIO DE CLASE CURSO 2020-2021</a></h1>
+    <table>
+        <thead>
+            <tr>
+                <th>HORAS</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00</td>
+                <td class="matematicas" rowspan="2">Matemáticas</td>
+                <td>Lengua</td>
+                <td>Inglés</td>
+                <td colspan="2">Ciencias</td>
+            </tr>
+            <tr>
+                <td>9:00</td>
+                <td>Historia</td>
+                <td>Ciencias</td>
+                <td class="matematicas">Matemáticas</td>
+                <td>Lengua</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td colspan="5">RECREO</td>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td>Inglés</td>
+                <td rowspan="2">Ciencias</td>
+                <td class="matematicas">Matemáticas</td>
+                <td>Lengua</td>
+                <td>Historia</td>
+            </tr>
+            <tr>
+                <td>11:30</td>
+                <td>Historia</td>
+                <td>Ciencias</td>
+                <td class="matematicas">Matemáticas</td>
+                <td>Inglés</td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="#" method="post">
+        <label for="email">Email</label>
+        <input type="email" name="Hotmail" id="email" placeholder="Inserte email del destinatario" required>
+        <br>
+        <input type="submit" value="Enviar Horario">
+    </form>
+</body>
+
+</html>
