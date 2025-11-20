@@ -5,36 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sol y oveja</title>
-</head>
-<style>
+    <style>
     body {
-        background-image:
-            url(./../img/sheepPequeña2.png),
-            url(./../img/sunPequeño.png),
-            url(./../img/purepng.com-duck-whitebirdsflyanimals-631522936657nkh1x.png),
-            url(./../img/hierba2.jpg);
-        background-position: bottom, top left, bottom;
-        background-position-y: 98%, 30%, 98%, 100%;
-        background-position-x: 70%, 0%, 30%, 100%;
-        background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
-        background-attachment: fixed, fixed, fixed, fixed;
-        background-size: auto, auto, 200px, auto;
-        margin-right: 50px;
-        margin-bottom: 200px;
-        text-align: justify;
+        background-image:url(./../img/hierba2.jpg);
+        background-position:bottom;
+        background-position-y:100%;
+        background-position-x:100%;
+        background-repeat:repeat-x;
+        background-attachment:fixed;
+        background-size:auto;
+        margin-right:50px;
+        margin-bottom:200px;
+        text-align:justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-
     div {
         overflow: auto;
         height: 400px;
         margin-left: 200px;
     }
+    #pato{
+        width: 200px;
+        position: fixed;
+        top: 90%;
+        left: 40%;
+    }
+    #sol{
+        width: 200px;
+        position: fixed;
+        top: 10%;
+        left: 0%;
+    }
+    #oveja{
+        width: 250px;
+        position: fixed;
+        top: 70%;
+        left: 20%;
+    }
+    div > h2{
+        display: inline-block;
+        background-color: aliceblue;
+    }
 </style>
-
+</head>
 <body>
     <br>
     <h1 style="margin-left: 100px;">Ejercicio</h1>
     <div>
+        <img src="./../img/pajaro.wbp" alt="">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel neque aliquam ducimus totam amet reprehenderit
         modi porro! Quod iure nemo cum modi aliquid placeat odit totam? Numquam vitae ab architecto.
         Dicta repudiandae itaque voluptatum, natus odio nam commodi ea nesciunt aliquam enim earum quae corporis
@@ -117,6 +135,9 @@
         Earum error, modi quo maiores quis odit ducimus consequatur aspernatur soluta laborum veniam reiciendis quidem
         nihil. Quod culpa hic error laudantium molestiae officiis ad vero ab, dicta consequatur alias tenetur!
     </div>
+    <img src="./../img/purepng.com-duck-whitebirdsflyanimals-631522936657nkh1x.png" alt="Pato Realista" id="pato">
+    <img src="./../img/sheepPequeña2.png" alt="Oveja Pequeña" id="oveja">
+    <img src="./../img/sunPequeño.png" alt="Sol" id="sol">
 </body>
 
 </html>
