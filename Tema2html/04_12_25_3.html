@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .grid {
+            display: grid;
+            grid-template-areas:    "head head head head"
+                                    "side cont cont cont"
+                                    "foot foot foot foot";
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 4fr 1fr;
+            height: 98vh;
+        }
+
+        .header {
+            background-color: rgb(205, 255, 130);
+            grid-area: head;
+        }
+
+        .sidebar {
+            background-color: rgb(154, 213, 213);
+            grid-area: side;
+        }
+
+        .content {
+            background-color: rgb(106, 106, 234);
+            grid-area: cont;
+        }
+
+        .footer {
+            background-color: rgb(158, 113, 113);
+            grid-area: foot;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Grid</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            height: 60vh;
+        }
+        div{
+            display: grid;
+            grid-template-columns: repeat(6, 16.6%);
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+        }
+        img{
+            border-radius: 40px;
+        }
+        body > h1{
+            align-content: center;
+            width: 200px;
+            margin: 15px 35px 15px 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Práctica de uso de flex</h1>
+    <div>
+        <img src="EntregaFlex/img/img1.png">
+        <img src="EntregaFlex/img/img2.png">
+        <img src="EntregaFlex/img/img3.png">
+        <img src="EntregaFlex/img/img4.png">
+        <img src="EntregaFlex/img/img5.png">
+        <img src="EntregaFlex/img/img6.png">
+        <img src="EntregaFlex/img/img7.png">
+        <img src="EntregaFlex/img/img8.png">
+        <img src="EntregaFlex/img/img9.png">
+        <img src="EntregaFlex/img/img10.png">
+        <img src="EntregaFlex/img/img11.png">
+        <img src="EntregaFlex/img/img12.png">
+    </div>
+</body>
+</html>
