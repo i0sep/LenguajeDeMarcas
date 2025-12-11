@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <style>
+        #dias,
+        #grid {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-gap: 4px;
+            text-align: center;
+        }
+        #dias>li {
+            background-color: rgb(227, 171, 158);
+            text-decoration: wavy;
+            color: aliceblue;
+            border: 3px solid black;
+            font-size: x-large;
+        }
+        #grid>li {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            border: 3px solid black;
+            font-size: large;
+        }
+        #grid {
+            counter-reset: dias;
+        }
+        #grid li::before {
+            counter-increment: dias;
+            content: counter(dias);
+        }
+        #grid li:nth-of-type(6),
+        #grid li:nth-of-type(8),
+        #grid li:nth-of-type(25) {
+            background-color: rgb(255, 0, 0);
+        }
+        #grid li:nth-of-type(7),
+        #grid li:nth-of-type(13),
+        #grid li:nth-of-type(14),
+        #grid li:nth-of-type(20),
+        #grid li:nth-of-type(21),
+        #grid li:nth-of-type(27),
+        #grid li:nth-of-type(28) {
+            background-color: coral;
+        }
+        #grid li:nth-of-type(n+22):nth-of-type(-n+31){
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="dias">
+        <li>LUNES</li>
+        <li>MARTES</li>
+        <li>MIÉRCOLES</li>
+        <li>JUEVES</li>
+        <li>VIERNES</li>
+        <li>SÁBADO</li>
+        <li>DOMINGO</li>
+    </ul>
+    <ul id="grid">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>
